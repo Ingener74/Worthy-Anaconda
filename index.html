@@ -28,14 +28,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="components/RadioOption.jsx" type="text/jsx"></script>
+<script src="components/RadioOtherOption.jsx" type="text/jsx"></script>
 <script src="components/Demo.jsx" type="text/jsx"></script>
 
 <div id="cont"></div>
 
 <script type="text/jsx">
-    var demo = React.createElement(Demo);
-//    React.render(demo, document.body);
-    React.render(demo, document.getElementById("cont"));
+    React.render(<Demo />, document.getElementById("cont"));
 </script>
 
 </body>
