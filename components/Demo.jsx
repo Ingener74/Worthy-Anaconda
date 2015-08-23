@@ -1,5 +1,12 @@
 var Demo = React.createClass({
     render: function () {
+        var radioOptions = [
+                {value: 'newspaper', label: 'Newspaper' },
+                {value: 'radio', label: 'Radio'},
+                {value: 'tv', label: 'Television'},
+                {value: 'search', label: 'Search Engine'},
+                {value: 'social', label: 'Social'}
+            ];
         return (
             <div className="container">
                 <div className="row">
@@ -8,30 +15,9 @@ var Demo = React.createClass({
                     <form>
                         <p className="h3">How did you hear about us?</p>
 
-                        <RadioOption value="newspaper">
-                            Newspaper
-                        </RadioOption>
+                        <RadioOptionGroup options={radioOptions} />
 
-                        <RadioOption value="radio">
-                            Radio
-                        </RadioOption>
-
-                        <RadioOption value="tv">
-                            Television
-                        </RadioOption>
-
-                        <RadioOption value="search">
-                            Search Engine
-                        </RadioOption>
-
-                        <RadioOption value="social">
-                            Social Medai
-                        </RadioOption>
-
-                        <RadioOtherOption>
-                        </RadioOtherOption>
-
-
+                        <p><input type="submit" /></p>
                     </form>
                 </div>
             </div>
